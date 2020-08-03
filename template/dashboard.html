@@ -1,0 +1,24 @@
+{% extends "main.html" %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <title>{% block title %}dashboard{% endblock title %}</title>
+  </head>
+  <body>
+{% block content %}
+    this is dashboard
+
+    {% for ob in cob %}
+    {{ob.cname}}
+    {% endfor %}
+{% endblock content %}
+   
+
+   
+  </body>
+</html>
